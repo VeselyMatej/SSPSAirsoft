@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Domů | Airsoftový klub SSPŠ</title>
+  <meta name="description" content="Airsoftový klub SSPŠ – školní klub Smíchovské střední průmyslové školy v Praze. Týmová práce, taktika, disciplína a bezpečnost.">
+  <meta name="theme-color" content="#111111">
+
+  <!-- Open Graph / sociální sítě. og:url a canonical doplnit, až bude známá doména: [URL / doména webu] -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:site_name" content="Airsoftový klub SSPŠ">
+  <meta property="og:title" content="Airsoftový klub SSPŠ">
+  <meta property="og:description" content="Školní airsoftový klub Smíchovské střední průmyslové školy. Disciplína. Týmová práce. Bezpečnost.">
+  <meta property="og:image" content="assets/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo Airsoftového klubu SSPŠ a členové klubu při tréninku">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;600&display=swap&subset=latin-ext">
+
+  <!-- Hero: preload only the version the current screen will use -->
+  <link rel="preload" as="image" type="image/webp" media="(min-width: 640px)"
+        imagesrcset="assets/photos/breach-1280.webp 1280w, assets/photos/breach-1920.webp 1920w" imagesizes="100vw">
+  <link rel="preload" as="image" type="image/webp" media="(max-width: 639.98px)"
+        imagesrcset="assets/photos/team-640.webp 640w, assets/photos/team-1280.webp 1280w" imagesizes="100vw">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="Klub SSPŠ – úvodní stránka">
+        <img class="brand__logo" src="assets/logo/logo.png" alt="" width="306" height="518">
+        <span class="brand__name">Klub SSPŠ</span>
+      </a>
+
+      <nav class="nav" aria-label="Hlavní navigace">
+        <ul class="nav__list" role="list">
+          <li><a class="nav__link" href="index.html" aria-current="page">Domů</a></li>
+          <li><a class="nav__link" href="o-nas.html">O&nbsp;nás</a></li>
+          <li><a class="nav__link" href="galerie.html">Galerie</a></li>
+          <li><a class="nav__link" href="partneri.html">Pro partnery</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn--primary btn--sm site-header__cta" href="partneri.html">Staňte se partnerem</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Otevřít menu">
+        <span class="menu-toggle__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Mobilní navigace">
+      <ul class="mobile-menu__list" role="list">
+        <li><a class="mobile-menu__link" href="index.html" aria-current="page">Domů</a></li>
+        <li><a class="mobile-menu__link" href="o-nas.html">O&nbsp;nás</a></li>
+        <li><a class="mobile-menu__link" href="galerie.html">Galerie</a></li>
+        <li><a class="mobile-menu__link" href="partneri.html">Pro partnery</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--primary mobile-menu__cta" href="partneri.html">Staňte se partnerem</a>
+  </div>
+
+  <main id="obsah" tabindex="-1">
+
+    <!-- 1. Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <picture class="hero__media">
+        <source media="(min-width: 640px)" type="image/webp"
+                srcset="assets/photos/breach-640.webp 640w, assets/photos/breach-1280.webp 1280w, assets/photos/breach-1920.webp 1920w" sizes="100vw">
+        <source media="(min-width: 640px)" type="image/jpeg"
+                srcset="assets/photos/breach-640.jpg 640w, assets/photos/breach-1280.jpg 1280w, assets/photos/breach-1920.jpg 1920w" sizes="100vw">
+        <source type="image/webp"
+                srcset="assets/photos/team-640.webp 640w, assets/photos/team-1280.webp 1280w" sizes="100vw">
+        <img src="assets/photos/team-640.jpg"
+             srcset="assets/photos/team-640.jpg 640w, assets/photos/team-1280.jpg 1280w" sizes="100vw"
+             width="1280" height="1920" fetchpriority="high"
+             alt="Členové Airsoftového klubu SSPŠ v&nbsp;ochranném vybavení při tréninku">
+      </picture>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">
+            <svg class="battlement" width="40" height="24" viewBox="0 0 40 24" aria-hidden="true"><path d="M0 24V8h8v6h6V2h12v12h6V8h8v16z" fill="currentColor"/></svg>
+            Smíchovská střední průmyslová škola
+          </p>
+          <h1 class="hero__title" id="hero-title">Airsoftový klub SSPŠ</h1>
+          <p class="lead hero__lead">Školní airsoftový klub, který učí týmovou spolupráci, taktiku a&nbsp;zodpovědnost. Trénujeme, jezdíme na akce a&nbsp;chceme reprezentovat naši školu.</p>
+          <div class="btn-row">
+            <a class="btn btn--ghost" href="o-nas.html">Kdo jsme</a>
+            <a class="btn btn--primary" href="partneri.html">Staňte se partnerem</a>
+          </div>
+        </div>
+        <img class="hero__logo" src="assets/logo/logo.png" alt="Logo Airsoftového klubu SSPŠ" width="306" height="518">
+      </div>
+    </section>
+
+    <!-- 2. Ve zkratce -->
+    <section class="section" aria-labelledby="zkratka-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">
+            <svg class="battlement" width="40" height="24" viewBox="0 0 40 24" aria-hidden="true"><path d="M0 24V8h8v6h6V2h12v12h6V8h8v16z" fill="currentColor"/></svg>
+            Ve zkratce
+          </p>
+          <h2 class="section-header__title" id="zkratka-title">Klub SSPŠ</h2>
+          <p class="lead">Jsme studenti SSPŠ, kteří ve školním roce 2026/27 založili vlastní airsoftový klub. Klademe důraz na týmovou práci, taktiku, disciplínu a&nbsp;hlavně bezpečnost.</p>
+        </header>
+
+        <dl class="stats reveal">
+          <div class="stat">
+            <dt class="visually-hidden">Počet členů</dt>
+            <dd class="stat__value">20+</dd>
+            <dd class="stat__label">členů klubu</dd>
+          </div>
+          <div class="stat">
+            <dt class="visually-hidden">Založení</dt>
+            <dd class="stat__value">2026/27</dd>
+            <dd class="stat__label">rok založení</dd>
+          </div>
+          <div class="stat">
+            <dt class="visually-hidden">Status</dt>
+            <dd class="stat__value">SSPŠ</dd>
+            <dd class="stat__label">oficiální školní klub</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 3. Co děláme -->
+    <section class="section section--raised" aria-labelledby="cinnost-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">
+            <svg class="battlement" width="40" height="24" viewBox="0 0 40 24" aria-hidden="true"><path d="M0 24V8h8v6h6V2h12v12h6V8h8v16z" fill="currentColor"/></svg>
+            Činnost
+          </p>
+          <h2 class="section-header__title" id="cinnost-title">Co děláme</h2>
+        </header>
+
+        <ul class="card-grid card-grid--4" role="list">
+          <li class="card reveal">
+            <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <h3 class="card__title">Pravidelné tréninky</h3>
+            <p class="card__text">Taktika, pohyb v&nbsp;týmu, komunikace a&nbsp;práce s&nbsp;vybavením.</p>
+            <p class="card__meta">Kdy a&nbsp;kde: <span class="placeholder">[frekvence a místo tréninků]</span></p>
+          </li>
+          <li class="card reveal">
+            <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></svg>
+            <h3 class="card__title">Víkendové hry a&nbsp;akce</h3>
+            <p class="card__text">Společně jezdíme na airsoftové hry – v&nbsp;lese i&nbsp;v&nbsp;CQB prostorech.</p>
+            <p class="card__meta">Kam jezdíme: <span class="placeholder">[typická místa akcí]</span></p>
+          </li>
+          <li class="card reveal">
+            <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+            <h3 class="card__title">Bezpečnost a&nbsp;výchova</h3>
+            <p class="card__text">Pravidla, ochranné vybavení a&nbsp;fair play. Ochranné brýle nebo maska jsou povinné, kdykoli se používají repliky.</p>
+          </li>
+          <li class="card reveal">
+            <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+            <h3 class="card__title">Turnaje a&nbsp;soutěže</h3>
+            <p class="card__text">Chceme reprezentovat SSPŠ na turnajích a&nbsp;soutěžích.</p>
+            <p class="card__meta">Stav: <span class="placeholder">[stav turnajů]</span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. Statement band -->
+    <section class="statement-band" aria-label="Hodnoty klubu">
+      <div class="container">
+        <p class="statement-band__text"><span>Disciplína.</span> <span>Týmová práce.</span> <span>Bezpečnost.</span></p>
+      </div>
+    </section>
+
+    <!-- 5. Z akcí -->
+    <section class="section" aria-labelledby="akce-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">
+            <svg class="battlement" width="40" height="24" viewBox="0 0 40 24" aria-hidden="true"><path d="M0 24V8h8v6h6V2h12v12h6V8h8v16z" fill="currentColor"/></svg>
+            Galerie
+          </p>
+          <h2 class="section-header__title" id="akce-title">Z akcí</h2>
+          <p class="lead">Tréninky, hry a&nbsp;instruktáže našich členů.</p>
+        </header>
+
+        <ul class="photo-grid reveal" role="list">
+          <li class="photo">
+            <picture>
+              <source type="image/webp" srcset="assets/photos/team-640.webp 640w, assets/photos/team-1280.webp 1280w, assets/photos/team-1920.webp 1920w" sizes="(min-width: 1280px) 395px, (min-width: 640px) 31vw, 50vw">
+              <img src="assets/photos/team-640.jpg" srcset="assets/photos/team-640.jpg 640w, assets/photos/team-1280.jpg 1280w, assets/photos/team-1920.jpg 1920w" sizes="(min-width: 1280px) 395px, (min-width: 640px) 31vw, 50vw" width="1280" height="1920" loading="lazy" decoding="async" alt="Čtyři členové klubu v&nbsp;airsoftovém vybavení při společné fotografii">
+            </picture>
+          </li>
+          <li class="photo">
+            <picture>
+              <source type="image/webp" srcset="assets/photos/cqb-2v2-640.webp 640w, assets/photos/cqb-2v2-1280.webp 1280w, assets/photos/cqb-2v2-1920.webp 1920w" sizes="(min-width: 1280px) 395px, (min-width: 640px) 31vw, 50vw">
+              <img src="assets/photos/cqb-2v2-640.jpg" srcset="assets/photos/cqb-2v2-640.jpg 640w, assets/photos/cqb-2v2-1280.jpg 1280w, assets/photos/cqb-2v2-1920.jpg 1920w" sizes="(min-width: 1280px) 395px, (min-width: 640px) 31vw, 50vw" width="1280" height="1920" loading="lazy" decoding="async" alt="Hráč v&nbsp;přilbě se kryje za zdí, v&nbsp;průchodu za ním stojí další dva hráči">
+            </picture>
+          </li>
+          <li class="photo">
+            <picture>
+              <source type="image/webp" srcset="assets/photos/trenink-mireni-640.webp 640w, assets/photos/trenink-mireni-1280.webp 1280w, assets/photos/trenink-mireni-1920.webp 1920w" sizes="(min-width: 1280px) 395px, (min-width: 640px) 31vw, 50vw">
+              <img src="assets/photos/trenink-mireni-640.jpg" srcset="assets/photos/trenink-mireni-640.jpg 640w, assets/photos/trenink-mireni-1280.jpg 1280w, assets/photos/trenink-mireni-1920.jpg 1920w" sizes="(min-width: 1280px) 395px, (min-width: 640px) 31vw, 50vw" width="1280" height="1920" loading="lazy" decoding="async" alt="Člen klubu v&nbsp;kleče míří replikou při tréninku v&nbsp;tělocvičně">
+            </picture>
+          </li>
+          <li class="photo">
+            <picture>
+              <source type="image/webp" srcset="assets/photos/instruktaz-drzeni-640.webp 640w, assets/photos/instruktaz-drzeni-1280.webp 1280w, assets/photos/instruktaz-drzeni-1920.webp 1920w" sizes="(min-width: 1280px) 395px, (min-width: 640px) 31vw, 50vw">
+              <img src="assets/photos/instruktaz-drzeni-640.jpg" srcset="assets/photos/instruktaz-drzeni-640.jpg 640w, assets/photos/instruktaz-drzeni-1280.jpg 1280w, assets/photos/instruktaz-drzeni-1920.jpg 1920w" sizes="(min-width: 1280px) 395px, (min-width: 640px) 31vw, 50vw" width="1280" height="1920" loading="lazy" decoding="async" alt="Člen klubu ukazuje nováčkovi, jak správně držet repliku; oba mají ochranné brýle">
+            </picture>
+          </li>
+          <li class="photo">
+            <picture>
+              <source type="image/webp" srcset="assets/photos/shot-timer-640.webp 640w, assets/photos/shot-timer-1280.webp 1280w, assets/photos/shot-timer-1920.webp 1920w" sizes="(min-width: 1280px) 395px, (min-width: 640px) 31vw, 50vw">
+              <img src="assets/photos/shot-timer-640.jpg" srcset="assets/photos/shot-timer-640.jpg 640w, assets/photos/shot-timer-1280.jpg 1280w, assets/photos/shot-timer-1920.jpg 1920w" sizes="(min-width: 1280px) 395px, (min-width: 640px) 31vw, 50vw" width="1280" height="1920" loading="lazy" decoding="async" alt="Hráč s&nbsp;ochrannými brýlemi při cvičení, vedle něj měřič času na telefonu">
+            </picture>
+          </li>
+          <li class="photo">
+            <picture>
+              <source type="image/webp" srcset="assets/photos/instruktaz-pistole-640.webp 640w, assets/photos/instruktaz-pistole-1280.webp 1280w, assets/photos/instruktaz-pistole-1920.webp 1920w" sizes="(min-width: 1280px) 395px, (min-width: 640px) 31vw, 50vw">
+              <img src="assets/photos/instruktaz-pistole-640.jpg" srcset="assets/photos/instruktaz-pistole-640.jpg 640w, assets/photos/instruktaz-pistole-1280.jpg 1280w, assets/photos/instruktaz-pistole-1920.jpg 1920w" sizes="(min-width: 1280px) 395px, (min-width: 640px) 31vw, 50vw" width="1280" height="1920" loading="lazy" decoding="async" alt="Člen klubu ve výstroji vysvětluje nováčkovi práci s&nbsp;pistolovou replikou">
+            </picture>
+          </li>
+        </ul>
+
+        <p class="section-footer"><a class="link" href="galerie.html">Celá galerie&nbsp;→</a></p>
+      </div>
+    </section>
+
+    <!-- 6. Partneři -->
+    <section class="section section--raised" aria-labelledby="partneri-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">
+            <svg class="battlement" width="40" height="24" viewBox="0 0 40 24" aria-hidden="true"><path d="M0 24V8h8v6h6V2h12v12h6V8h8v16z" fill="currentColor"/></svg>
+            Spolupráce
+          </p>
+          <h2 class="section-header__title" id="partneri-title">Partneři</h2>
+          <p class="lead">Partnery teprve hledáme. Místo pro to vaše je zatím volné.</p>
+        </header>
+
+        <ul class="partner-grid reveal" role="list">
+          <li class="partner-tile partner-tile--placeholder">Místo pro vaše logo</li>
+          <li class="partner-tile partner-tile--placeholder">Místo pro vaše logo</li>
+          <li class="partner-tile partner-tile--placeholder">Místo pro vaše logo</li>
+          <li class="partner-tile partner-tile--placeholder">Místo pro vaše logo</li>
+        </ul>
+
+        <div class="cta-box reveal">
+          <p class="cta-box__text">Chcete nás podpořit? Ozvěte se – rádi vám představíme možnosti spolupráce.</p>
+          <a class="btn btn--primary" href="partneri.html">Staňte se partnerem</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <img class="site-footer__logo" src="assets/logo/logo.png" alt="Logo Airsoftového klubu SSPŠ" width="306" height="518" loading="lazy">
+          <p class="site-footer__name">Airsoftový klub SSPŠ</p>
+          <p>Smíchovská střední průmyslová škola, Praha</p>
+        </div>
+
+        <nav aria-label="Odkazy v patičce">
+          <h2 class="site-footer__heading">Navigace</h2>
+          <ul class="site-footer__links" role="list">
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="o-nas.html">O&nbsp;nás</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="partneri.html">Pro partnery</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="site-footer__heading">Kontakt</h2>
+          <div class="site-footer__contact">
+            <p>E-mail: <span class="placeholder">[kontaktní e-mail]</span></p>
+            <p>Sociální sítě: <span class="placeholder">[sociální sítě]</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>© 2026 Airsoftový klub SSPŠ</p>
+        <p>Disciplína. Týmová práce. Bezpečnost.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* Design tokens – Airsoftový klub SSPŠ (DESIGN.md §4) */
+:root {
+  /* surfaces */
+  --bg:          #111111;
+  --bg-raised:   #1B1B1B;
+  --bg-raised-2: #222222;
+  --line:        #2C2C2C;
+
+  /* text */
+  --text:        #F2EFE6;
+  --text-muted:  #C9C5BA;
+  --text-subtle: #8A867C;
+
+  /* accent */
+  --gold:        #F2BF0C;
+  --gold-hover:  #FFD23F;
+  --gold-deep:   #2B2410;
+  --on-gold:     #111111;
+
+  /* feedback */
+  --error:       #E5484D;
+
+  /* overlays */
+  --overlay-photo: linear-gradient(180deg, rgba(17, 17, 17, .2) 0%, rgba(17, 17, 17, .85) 100%);
+  --header-bg:     rgba(17, 17, 17, .9);
+
+  /* fonts */
+  --font-display: "Oswald", "Arial Narrow", system-ui, sans-serif;
+  --font-body:    "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* type scale */
+  --fs-hero:    clamp(3rem, 8vw, 7.5rem);
+  --fs-h2:      clamp(2.25rem, 4.5vw, 4.5rem);
+  --fs-h3:      clamp(1.375rem, 2vw, 1.75rem);
+  --fs-lead:    clamp(1.125rem, 1.6vw, 1.375rem);
+  --fs-body:    1rem;
+  --fs-small:   0.875rem;
+  --fs-eyebrow: 0.8125rem;
+  --fs-stat:    clamp(3rem, 6vw, 5.5rem);
+  --fs-nav:     0.9375rem;
+  --fs-menu:    clamp(2rem, 9vw, 3rem);
+
+  --lh-hero: 1.1;  /* DESIGN says 1.0, but Ý/Š diacritics collide between lines at 1.0 */
+  --lh-h2:   1.05;
+  --lh-h3:   1.2;
+  --lh-lead: 1.5;
+  --lh-body: 1.6;
+
+  --ls-heading: 0.01em;
+  --ls-ui:      0.08em;
+  --ls-eyebrow: 0.2em;
+
+  /* spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  /* layout */
+  --container: 1200px;
+  --gutter: 20px;
+  --section-pad: clamp(64px, 10vw, 128px);
+  --grid-gap: 24px;
+  --header-h: 72px;
+
+  /* shape */
+  --radius-card: 12px;
+  --radius-btn: 8px;
+  --radius-pill: 999px;
+  --border: 1px solid var(--line);
+  --border-accent: 4px solid var(--gold);
+
+  /* motion */
+  --dur-fast: 150ms;
+  --dur: 250ms;
+  --ease: ease-out;
+}
+
+@media (min-width: 640px) {
+  :root { --gutter: 32px; }
+}
+
+@media (min-width: 1024px) {
+  :root { --gutter: 48px; --grid-gap: 32px; --header-h: 80px; }
+}
