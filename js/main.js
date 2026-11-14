@@ -9,19 +9,30 @@
 
   /* ---------- Header scroll state ---------- */
   var header = document.querySelector(".site-header");
-  var hero = document.querySelector(".hero");
 
   function updateHeader() {
     if (!header) return;
-    var y = window.scrollY;
-    header.classList.toggle("is-scrolled", y > 8);
-    var heroEnd = hero ? hero.offsetHeight - header.offsetHeight : 0;
-    header.classList.toggle("is-past-hero", !hero || y > heroEnd);
+    header.classList.toggle("is-scrolled", window.scrollY > 8);
   }
 
   updateHeader();
   window.addEventListener("scroll", updateHeader, { passive: true });
-  window.addEventListener("resize", updateHeader);
+
+  /* ---------- One primary button per screen ----------
+     The header CTA turns ghost while any other primary button in <main> is in view. */
+  var pagePrimaries = document.querySelectorAll("main .btn--primary");
+
+  if (header && pagePrimaries.length && "IntersectionObserver" in window) {
+    var visible = new Set();
+    var ctaObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) visible.add(entry.target);
+        else visible.delete(entry.target);
+      });
+      header.classList.toggle("is-cta-muted", visible.size > 0);
+    });
+    pagePrimaries.forEach(function (btn) { ctaObserver.observe(btn); });
+  }
 
   /* ---------- Mobile menu ---------- */
   var toggle = document.querySelector(".menu-toggle");

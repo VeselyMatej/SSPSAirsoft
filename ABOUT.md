@@ -15,7 +15,7 @@
 | Type | Official school club, founded with the approval of the school principal |
 | Founded | School year 2026/27 |
 | Members | 20+ students |
-| Club leader(s) | [TODO: jméno / přezdívka + role, e.g. „velitel klubu“, „zástupce“] |
+| Club leader(s) | Leadership team of 6 people. [TODO: přezdívka + role for each of the 6, e.g. „velitel klubu“, „zástupce“] |
 | Tagline | Disciplína. Týmová práce. Bezpečnost. |
 
 **How to say "official" in Czech copy:** „oficiální klub SSPŠ“ or „klub vznikl se souhlasem vedení školy“. Mention it once per page at most, where it builds trust (O nás, Pro partnery). Don't repeat it in every section.

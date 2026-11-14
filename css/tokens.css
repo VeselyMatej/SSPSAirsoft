@@ -41,7 +41,7 @@
   --fs-menu:    clamp(2rem, 9vw, 3rem);
 
   --lh-hero: 1.1;  /* DESIGN says 1.0, but Ý/Š diacritics collide between lines at 1.0 */
-  --lh-h2:   1.05;
+  --lh-h2:   1.15; /* DESIGN says 1.05; Czech diacritics collide between lines below ~1.15 */
   --lh-h3:   1.2;
   --lh-lead: 1.5;
   --lh-body: 1.6;

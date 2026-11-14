@@ -5,6 +5,31 @@ Each entry: date, what changed, and why when it isn't obvious.
 
 ---
 
+## 2026-11-14 – Step 2: O nás page
+
+### Added
+- `o-nas.html`: the full page, replacing the stub. Sections:
+  - page header
+  - Náš příběh (with `Team_All`)
+  - Naše hodnoty (01/02/03)
+  - Bezpečnost na prvním místě (ABOUT §5 rules + `T_Explain1`)
+  - Co děláme (tréninky + `T_Aim`, hry a akce + `2v2`, turnaje without a photo)
+  - Vedení klubu (6 placeholder cards)
+  - partner CTA box
+- New components in `css/components.css`: `.page-header`, `.split` / `.split--reverse`, `.numbered`, `.rule-list`, `.facts`, `.person-card`.
+
+### Changed
+- `ABOUT.md` §1: the club leadership is a team of 6 people (names and roles still TODO).
+- `galerie.html`, `partneri.html`: stub markup now uses the shared `.page-header page-header--stub` (the old `.stub` styles were removed).
+- Header CTA logic (`js/main.js` + CSS): the header „Staňte se partnerem“ now turns ghost whenever any other primary button in `<main>` is visible. This replaces the hero-only rule and keeps one primary button per screen on every page.
+- `--lh-h2` 1.05 → 1.15 (DESIGN says 1.05): Czech diacritics on line 2 of two-line section titles cut into line 1.
+- Split photos use a 4:3 crop below 1024px and 4:5 on desktop, so the mobile page isn't dominated by tall photos.
+
+### Placeholders left (O nás)
+`[proč klub vznikl – 1–3 věty]`, `[minimální věk / souhlas rodičů]`, `[frekvence tréninků]`, `[místo tréninků]`, `[typická místa akcí]`, `[stav turnajů]`, 6× `[přezdívka]` / `[role]`, footer `[kontaktní e-mail]`, `[sociální sítě]`.
+
+---
+
 ## 2026-11-13 – Step 1: foundation + homepage
 
 ### Added
